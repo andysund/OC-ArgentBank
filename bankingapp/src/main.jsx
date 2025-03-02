@@ -5,6 +5,7 @@ import store from '../src/store.js'; // ton store Redux
 import App from './App.jsx';
 import './index.css'; // Vos styles globaux
 
+
 const rootElement = document.getElementById('root');
 
 if (rootElement) {

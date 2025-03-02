@@ -53,6 +53,11 @@
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+
+  .footer {
+    border-top: 2px solid gray;
+  
+  }
   
   @media (prefers-color-scheme: light) {
     :root {
