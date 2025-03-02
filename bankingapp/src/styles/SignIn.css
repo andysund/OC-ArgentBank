@@ -12,8 +12,9 @@
     height: 100vh; /* prend toute la hauteur de la fenêtre */
     display: flex;
     justify-content: center; /* centre horizontalement le formulaire */
-    align-items: center;     /* centre verticalement le formulaire */
+    align-items: flex-start;     /* centre verticalement le formulaire */
     margin: 0;              /* enlève les marges par défaut du body si besoin */
+    background-color: #12002b;
   }
   
   /* Style du formulaire */
@@ -22,8 +23,9 @@
     padding: 2rem;
     border-radius: 0.5rem;
     color: #fff;
-    width: 300px; /* Largeur fixe ou adaptative selon tes préférences */
+    width: 236px; /* Largeur fixe ou adaptative selon tes préférences */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* petit effet d'ombre */
+    margin-top: 48px;
   }
   
   .signin-title {
@@ -37,7 +39,7 @@
   }
   
   .input-wrapper label {
-    display: block;
+    display: flex;
     margin-bottom: 0.3rem;
     font-weight: 600;
   }
@@ -65,7 +67,6 @@
   /* Bouton de connexion */
   .signin-button {
     width: 100%;
-    padding: 0.75rem;
     background-color: #00bc77; /* couleur "verte" style ArgentBank */
     color: #fff;
     border: none;

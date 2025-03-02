@@ -42,6 +42,7 @@ function SignIn() {
   return (
     <div className="signin-page">
       <form className="signin-form" onSubmit={handleSubmit}>
+      <i className="fa fa-user-circle"></i>
         <h1 className="signin-title">Sign In</h1>
         <div className="input-wrapper">
           <label htmlFor="username">Username</label>
