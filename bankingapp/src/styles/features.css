@@ -75,6 +75,7 @@
     border-radius: 50%;
     max-width: 152px;
     max-height: 152px;
+    padding: 1rem;
    
   }
   .feature-item-content {

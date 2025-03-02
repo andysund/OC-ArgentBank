@@ -56,7 +56,11 @@
 
   .footer {
     border-top: 2px solid gray;
+    margin-top: 16px;
   
+  }
+  .footer-text {
+    padding: 32px;
   }
   
   @media (prefers-color-scheme: light) {
