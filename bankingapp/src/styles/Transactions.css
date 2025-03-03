@@ -1,68 +1,120 @@
-.Account {
-    background-color: #12002b;
-}
-.account-list-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    margin-top: 20px;
-
-}
-.account-list-welcome {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.account-list-container h2 {
-    margin: 0;
-    padding: 0;
+.main {
+    flex: 1;
+  }
   
-}
-.edit-button {
-    background-color: #00bc77;
-}
-.account-div{
+  .bg-dark {
+    background-color: #12002b;
+  }
+  
+  .sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;  
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+  
+  .header {
     display: flex;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    width: 100%;
-    margin-bottom: 30px;
-}
-.account-div h3,p{
+  }
+  .header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .edit-button {
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  /* La règle .Account_type a été supprimée car elle n'était pas utilisée dans le JSX */
+  .Account {
+    background-color: #12002b;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  } 
+  .account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: lightslategray;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 2rem;
+    height: 131px;
+  }
+  
+  .account-amount {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .account-amount-description {
+    margin: 0;
+  }
+  
+  .account-title {
     margin: 0;
     padding: 0;
-}
-.account-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 595px ;
-    max-height: 83px;
-    width: 80%;
-    height: 100%;
-    padding: 24px;
-    border: 1px solid black;
-    background-color: #fff;
-    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .account-content-wrapper {
+    width: 100%;
+    flex: 1;
+  }
+  
+  /* Note : la classe "edit-name" utilisée dans le JSX n'a pas été définie dans l'original,
+     il est possible d'ajouter des styles si nécessaire. */
+  
+  .transaction-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+  }
 
-    
-
-
-
-}
-
-.account-type {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    align-items: flex-start;
  
-}
-.account-button{
-    background-color: #00bc77;
-}
-.account-button button{
-    background-color: #00bc77;
-}
+  @media (min-width: 720px) {
+    .account {
+      flex-direction: row;
+    }
+  
+    .account-content-wrapper.cta {
+      flex: 0;
+    }
+  
+    .transaction-button {
+      width: 200px;
+    }
+  }
+  
